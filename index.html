@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posto Sicuro</title>
+
+    <style>
+        .menu-link {
+            color: #475569;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 15px;
+            transition: color 0.2s ease;
+        }
+        /* Quando passi il mouse sui link del menu */
+        .menu-link:hover {
+            color: #0284c7;
+        }
+
+        .btn-entra {
+            background-color: #0284c7;
+            color: white;
+            padding: 14px 32px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
+            transition: all 0.2s ease;
+        }
+        /* Quando passi il mouse sul pulsante blu principale */
+        .btn-entra:hover {
+            background-color: #0369a1; /* Diventa un blu più scuro */
+            transform: translateY(-2px); /* Si solleva di 2 pixel */
+            box-shadow: 0 6px 20px rgba(2, 132, 199, 0.4); /* L'ombra diventa più profonda */
+        }
+        /* Quando clicchi sul pulsante */
+        .btn-entra:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body style="background-color: #e0f2fe; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; box-sizing: border-box;">
+
+<nav style="background-color: white; padding: 15px 30px; border-radius: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); max-width: 800px; width: 90%; margin-bottom: 30px; display: flex; justify-content: space-between; align-items: center; box-sizing: border-box;">
+    <span style="font-weight: bold; color: #0369a1; font-size: 18px;">Posto Sicuro</span>
+    <div>
+        <a href="#" class="menu-link" style="margin-right: 20px;">Il progetto</a>
+        <a href="#" class="menu-link">Numeri Utili</a>
+    </div>
+</nav>
+
+<div style="background-color: white; padding: 40px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); max-width: 800px; width: 90%; text-align: center; box-sizing: border-box;">
+
+    <h1 style="color: #0369a1; margin-top: 0; margin-bottom: 20px; font-size: 36px; font-weight: bold;">Posto Sicuro</h1>
+
+    <p style="font-size: 18px; color: #334155; line-height: 1.8; margin-bottom: 15px;">
+        Questo è uno spazio protetto e totalmente anonimo, pensato per lasciarsi andare e liberare la mente.
+    </p>
+
+    <p style="font-size: 18px; color: #334155; line-height: 1.8; margin-bottom: 25px;">
+        Nessuno saprà chi sei. Puoi raccontare una situazione difficile, fare una segnalazione o semplicemente sfogarti. La tua voce conta.
+    </p>
+
+    <div style="background-color: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 20px; margin-bottom: 30px; text-align: left;">
+        <h3 style="margin-top: 0; margin-bottom: 10px; color: #0369a1; font-size: 16px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Se hai bisogno di aiuto immediato:</h3>
+        <p style="margin: 0; font-size: 15px; color: #475569; line-height: 1.6;">
+            📞 <strong style="color: #e11d48;">1522</strong> - Numero Antiviolenza e Stalking (Gratuito e attivo 24/7)<br>
+            📞 <strong style="color: #334155;">112</strong> - Numero Unico di Emergenza
+        </p>
+    </div>
+
+    <div style="margin-top: 10px;">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoNvJ0ay4qHZ1_ACnbsv2jdgYqDJKnto4jYpPwpXCBObrj_w/viewform?usp=header" style="text-decoration: none;">
+            <button type="button" class="btn-entra">
+                Entra nello spazio
+            </button>
+        </a>
+    </div>
+
+</div>
+
+<footer style="margin-top: 30px; text-align: center; color: #64748b; font-size: 14px;">
+    Posto Sicuro &copy; 2026 - Uno spazio protetto e anonimo.
+</footer>
+
+</body>
+</html>

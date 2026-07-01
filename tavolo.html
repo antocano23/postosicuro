@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Tavolo - Posto Sicuro</title>
+    <style>
+        body {
+            background-color: #0f172a; 
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; 
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+.ia-container {
+        position: absolute; 
+        top: 20px;          
+        left: 20px;        
+        z-index: 10;        
+    }
+
+    #ia-bottone {
+        background-color: #4a90e2;
+        color: white;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+    }
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            text-align: center;
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+        }
+
+        .scenografia-stanza {
+            display: flex;
+            flex-direction: row; 
+            justify-content: center;
+            align-items: stretch; 
+            gap: 30px;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        /* CONTENITORE IMMAGINE */
+        .immagine-tavolo-container {
+    flex: 1;
+    max-width: 500px; /* <--- Alzalo a 500px per dare più spazio alla foto */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 2px solid #334155;
+    background-color: #1e293b;
+        }
+
+        .immagine-tavolo-container:hover {
+            transform: scale(1.02);
+            border-color: #38bdf8;
+        }
+
+        .stanza-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            display: block;
+        }
+
+        /* BOX FORM MESSAGGI */
+        .box-messaggi {
+            flex: 1;
+            max-width: 500px;
+            background-color: #1e293b;
+            border: 2px solid #334155;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box-messaggi h2 {
+            color: #38bdf8;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .box-messaggi p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .google-form-container {
+            width: 100%;
+            flex-grow: 1; 
+            min-height: 400px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #475569;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .btn-indietro {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            background-color: #475569;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+
+        .btn-indietro:hover {
+            background-color: #334155;
+        }
+    <style>
+        body {
+            background-color: #0f172a; 
+            color: #f8fafc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; 
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+        }
+
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            text-align: center;
+            text-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+        }
+
+        .scenografia-stanza {
+            display: flex;
+            flex-direction: row; 
+            justify-content: center;
+            align-items: center; 
+            gap: 30px;
+            width: 100%;
+            max-width: 1100px;
+        }
+
+        /* CONTENITORE IMMAGINE PROPORZIONATO */
+        .immagine-tavolo-container {
+            flex: 1;
+            max-width: 400px; 
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 2px solid #334155;
+            background-color: #1e293b; 
+        }
+
+        /* FA VEDERE TUTTI E 4 GLI ANIMALETTI SENZA TAGLIARLI */
+        .stanza-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+
+        /* BOX FORM MESSAGGI */
+        .box-messaggi {
+            flex: 1;
+            max-width: 450px;
+            background-color: #1e293b;
+            border: 2px solid #334155;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        .box-messaggi h2 {
+            color: #38bdf8;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .box-messaggi p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .google-form-container {
+            width: 100%;
+            height: 450px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #475569;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .btn-indietro {
+            margin-top: 30px;
+            background-color: #475569;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background 0.2s;
+            display: inline-block;
+        }
+
+        .btn-indietro:hover {
+            background-color: #334155;
+        }
+    </style>
+</head>
+<body>
+<div class="ia-container">
+    <button id="ia-bottone" onclick="attivaIA()">🤖 Chiedi consiglio al Posto Sicuro</button>
+    <div id="risposta-ia" style="display:none;">
+        <p>Ciao! Sono qui, cosa ti passa per la testa oggi?</p>
+    </div>
+</div>
+    <h1>Il Tavolo di Posto Sicuro</h1>
+
+    <div class="scenografia-stanza">
+        
+        <!-- Contenitore con la foto locale rinominata -->
+        <div class="immagine-tavolo-container">
+    <img src="disegno.png" alt="Stanza Posto Sicuro" class="stanza-img">
+</div>
+
+        <div class="box-messaggi">
+            <h2>Lascia un pensiero anonimo</h2>
+            <p>Scrivi quello che ti passa per la testa. Nessuno saprà chi sei.</p>
+            
+            <div class="google-form-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoNvJ0ay4qHZ1_ACnbsv2jdgYqDJKnto4jYpPwpXCBObrj_w/viewform?embedded=true">
+                    Caricamento dell'area messaggi...
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <a href="index.html" class="btn-indietro">Alzati dal tavolo (Torna indietro)</a>
+    </div>
+<script>
+function attivaIA() {
+    var risposta = document.getElementById("risposta-ia");
+    if (risposta.style.display === "none") {
+        risposta.style.display = "block";
+    } else {
+        risposta.style.display = "none";
+    }
+}
+</script>
+</body>
+</html>

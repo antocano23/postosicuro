@@ -253,39 +253,35 @@
         <p>Ciao! Sono qui, cosa ti passa per la testa oggi?</p>
     </div>
 </div>
-    <h1>Il Tavolo di Posto Sicuro</h1>
 
-    <div class="scenografia-stanza">
-        
-        <!-- Contenitore con la foto locale rinominata -->
+<h1>Il Tavolo di Posto Sicuro</h1>
+
+<div class="scenografia-stanza">
     <div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 20px; padding: 20px;">
 
-    <div style="flex: 1; min-width: 300px;">
-        <img src="disegno.png" alt="Stanza Posto Sicuro" style="width: 100%; height: auto; display: block;">
-    </div>
-
-    <div style="width: 300px; border: 2px solid #000; padding: 20px; background-color: #f9f9f9; border-radius: 10px; box-sizing: border-box;">
-        <h3 style="margin-top: 0;">Posto Sicuro</h3>
-        <p>Scrivi quello che ti passa per la testa. Nessuno saprà chi sei.</p>
-        
-        <form action="https://docs.google.com/forms/d/1iscXIpet8lUtDDFF7e5EfS3TRnlBqMyhf2VVge0Fwiw/viewform" target="_blank">
-            <p>Scrivimi il tuo messaggio:</p>
-            <input type="text" name="entry.1026046026" placeholder="Il tuo messaggio qui..." required style="width: 100%; padding: 10px; margin-bottom: 10px; box-sizing: border-box;">
-            <button type="submit" style="width: 100%; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">Invia</button>
-        </form>
-    </div>
-
-</div>
-</div>
-                   </iframe>
-            </div>
+        <div style="flex: 1; min-width: 300px;">
+            <img src="disegno.png" alt="Stanza Posto Sicuro" style="width: 100%; height: auto; display: block;">
         </div>
 
+        <div id="chat-container" style="border: 2px solid #000; padding: 20px; background-color: #f9f9f9; border-radius: 10px; width: 300px; box-sizing: border-box;">
+            <h3 style="margin-top: 0;">Posto Sicuro</h3>
+            <p>Scrivi quello che ti passa per la testa. Nessuno saprà chi sei.</p>
+            
+            <form action="https://docs.google.com/forms/d/1iscXIpet8lUtDDFF7e5EfS3TRnlBqMyhf2VVge0Fwiw/viewform" target="_blank">
+                <p style="font-size: 14px; margin-bottom: 5px; color: #555;">Inserisci il tuo pensiero qui sotto:</p>
+                <input type="text" name="entry.1026046026" placeholder="Il tuo messaggio qui..." required 
+                       style="width: 100%; padding: 12px; margin-bottom: 15px; box-sizing: border-box; 
+                              background-color: #e3f2fd; border: 1px solid #90caf9; border-radius: 5px;">
+                <button type="submit" style="width: 100%; padding: 12px; background-color: #2196f3; color: white; border: none; border-radius: 5px; cursor: pointer; font-weight: bold;">Invia</button>
+            </form>
+        </div>
     </div>
+</div>
 
-    <div>
-        <a href="index.html" class="btn-indietro">Alzati dal tavolo (Torna indietro)</a>
-    </div>
+<div>
+    <a href="index.html" class="btn-indietro">Alzati dal tavolo (Torna indietro)</a>
+</div>
+
 <script>
 function attivaIA() {
     var risposta = document.getElementById("risposta-ia");
@@ -296,11 +292,6 @@ function attivaIA() {
     }
 }
 </script>
-<div id="chat-container">
-  <div id="chat-header">Posto Sicuro - Scrivimi</div>
-  <div id="chat-messages">
-    <p>Ciao! Qui puoi lasciare un pensiero. Risponderò appena possibile.</p>
-  </div>
   
   <form id="chat-form" action="https://docs.google.com/forms/d/1msqHkKCnpn62JItqrz6FOk2orkiHbO9vXaSFnE8iVHU/formResponse" target="_blank" method="POST">
   <input type="text" id="user-input" name="entry.1026046026" placeholder="Scrivi qui..." required>

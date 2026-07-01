@@ -288,5 +288,27 @@ function attivaIA() {
     }
 }
 </script>
+<div id="chat-container">
+  <div id="chat-header">Posto Sicuro - Scrivimi</div>
+  <div id="chat-messages">
+    <p>Ciao! Qui puoi lasciare un pensiero. Risponderò appena possibile.</p>
+  </div>
+  
+  <form id="chat-form" action="https://docs.google.com/forms/d/1msqHkKCnpn62JItqrz6FOk2orkiHbO9vXaSFnE8iVHU/formResponse" target="_blank" method="POST">
+  <input type="text" id="user-input" name="entry.1026046026" placeholder="Scrivi qui..." required>
+  <button type="submit">Invia</button>
+</form>
+</div>
+
+<style>
+#chat-container {
+  position: fixed; bottom: 20px; right: 20px; width: 300px;
+  background: white; border: 2px solid #ccc; border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); padding: 10px;
+}
+#chat-messages { height: 150px; overflow-y: auto; margin-bottom: 10px; font-size: 14px; }
+#chat-form { display: flex; gap: 5px; }
+#user-input { flex: 1; padding: 5px; }
+</style>
 </body>
 </html>
